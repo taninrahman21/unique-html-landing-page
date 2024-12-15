@@ -33,7 +33,7 @@
 .logo-text {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #000;
+  color: #0066ff;
 }
 
 /* Navigation Links */
@@ -474,6 +474,11 @@
   padding: 2rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  border-bottom: 4px solid #bbbec4;
+  transition: border 0.2s ease-in-out;
+}
+.pricing-card:hover {
+  border-bottom: 4px solid #0066ff;
 }
 
 .plan-name {
@@ -546,5 +551,282 @@
 
 .trial-btn:hover {
   opacity: 0.9;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+}
+
+/* Features */
+
+.features-section {
+  background-color: #f5f8fa;
+}
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.features-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.features-header h2 {
+  font-size: 2.5rem;
+  color: #0a1f44;
+  font-weight: 500;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.feature {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.feature-icon.green {
+  color: #22c55e;
+}
+.feature-icon.blue {
+  color: #3b82f6;
+}
+.feature-icon.orange {
+  color: #f97316;
+}
+.feature-icon.purple {
+  color: #8b5cf6;
+}
+.feature-icon.red {
+  color: #ef4444;
+}
+.feature-icon.teal {
+  color: #14b8a6;
+}
+
+.feature-content h3 {
+  color: #0a1f44;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.feature-content p {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .features-header h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Testimonial */
+.testimonial-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.testimonial-content {
+  flex: 1;
+  padding-right: 2rem;
+  text-align: center;
+}
+
+.quote {
+  font-size: 2rem;
+  color: #64748b;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.quote::before {
+  content: '"';
+  font-size: 4rem;
+  color: #9ea6af;
+  position: absolute;
+  left: -1rem;
+  top: -1.5rem;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0a1f44;
+  margin-bottom: 0.25rem;
+}
+
+.author-title {
+  color: #0066ff;
+  font-size: 1rem;
+}
+
+.testimonial-image {
+  flex: 1;
+  position: relative;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+}
+
+@media (max-width: 968px) {
+  .testimonial-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .testimonial-content {
+    padding-right: 0;
+  }
+
+  .quote::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .author {
+    align-items: center;
+  }
+
+  .testimonial-image img {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote {
+    font-size: 1.5rem;
+  }
+}
+
+/* Blog Section */
+.blog-section {
+  background-color: #f5f8fa;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.blog-header h2 {
+  font-size: 2.5rem;
+  color: #0a1f44;
+  font-weight: 500;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-15px);
+}
+
+.blog-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 1.5rem;
+}
+
+.blog-title {
+  font-size: 1.25rem;
+  color: #0a1f44;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+}
+
+.blog-title:hover {
+  color: #0066ff;
+}
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.blog-meta-divider {
+  color: #cbd5e1;
+}
+
+.blog-description {
+  color: #64748b;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .blog-header h2 {
+    font-size: 2rem;
+  }
 }

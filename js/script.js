@@ -1,6 +1,7 @@
 const allAccordionHeader = document.querySelectorAll('.accordion-header');
 const allAccordionBody = document.querySelectorAll('.accordion-item');
 
+// Accordion Logic
 allAccordionHeader.forEach(header => {
   header.addEventListener('click', () => {
     const item = header.parentElement;

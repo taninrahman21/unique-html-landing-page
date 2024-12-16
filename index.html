@@ -17,26 +17,48 @@
   <body>
     <header>
       <!-- Navigation -->
-      <nav class="navbar">
+      <nav class="navbar" id="home">
         <div class="navbar-container">
           <!-- Logo Section -->
           <div class="logo">
             <img src="./images/logo.png" alt="Logo" class="logo-image" />
             <span class="logo-text">Unique</span>
           </div>
-
           <!-- Navigation Links -->
           <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#our-team">Our Team</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
           <!-- Login and Sign-up Buttons -->
           <div class="auth-buttons">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="signup">Sign-up</a>
+          </div>
+
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+          <ul class="mobile-navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#our-team">Our Team</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="mobile-auth-buttons">
             <a href="#" class="login">Login</a>
             <a href="#" class="signup">Sign-up</a>
           </div>
@@ -103,7 +125,7 @@
     </section>
 
     <!-- Slider Section -->
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="slider-container">
         <div class="slider">
           <div class="slides">
@@ -192,44 +214,44 @@
         </div>
       </div>
 
-       <section class="partners-container">
+      <section class="partners-container">
         <div class="container-header">
-            <h2>Trusted By Over 9,000+ Businesses</h2>
+          <h2>Trusted By Over 9,000+ Businesses</h2>
         </div>
         <div class="logo-grid">
-            <div class="logo-row">
-                <div class="logo-item">
-                    <img src="/images/brands/partner1.webp" alt="Zendesk logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/brands/partner2.webp" alt="MailChimp logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/brands/partnar3.webp" alt="Freeddom logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/brands/partnar4.webp" alt="Intercom logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/brands/partnar6.webp" alt="Freshdesk logo">
-                </div>
+          <div class="logo-row">
+            <div class="logo-item">
+              <img src="/images/brands/partner1.webp" alt="Zendesk logo" />
             </div>
-            <div class="logo-row">
-                <div class="logo-item">
-                    <img src="/images/brands/partner7.webp" alt="Sharp logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/brands/github.webp" alt="GitHub logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/brands/react.webp" alt="React logo">
-                </div>
-                <div class="logo-item">
-                    <img src="/images/brands/bootstrap.webp" alt="Bootstrap logo">
-                </div>
+            <div class="logo-item">
+              <img src="/images/brands/partner2.webp" alt="MailChimp logo" />
             </div>
+            <div class="logo-item">
+              <img src="/images/brands/partnar3.webp" alt="Freeddom logo" />
+            </div>
+            <div class="logo-item">
+              <img src="/images/brands/partnar4.webp" alt="Intercom logo" />
+            </div>
+            <div class="logo-item">
+              <img src="/images/brands/partnar6.webp" alt="Freshdesk logo" />
+            </div>
+          </div>
+          <div class="logo-row">
+            <div class="logo-item">
+              <img src="/images/brands/partner7.webp" alt="Sharp logo" />
+            </div>
+            <div class="logo-item">
+              <img src="/images/brands/github.webp" alt="GitHub logo" />
+            </div>
+            <div class="logo-item">
+              <img src="/images/brands/react.webp" alt="React logo" />
+            </div>
+            <div class="logo-item">
+              <img src="/images/brands/bootstrap.webp" alt="Bootstrap logo" />
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
     </section>
 
     <!-- Discover Section -->
@@ -255,8 +277,136 @@
       </div>
     </section>
 
+    <!-- Fun Facts About Agency -->
+    <section class="fun-facts-section">
+      <section class="facts-container">
+        <div class="section-header">
+          <h2>Fun Facts About Our Agency</h2>
+        </div>
+        <div class="facts-grid">
+          <div class="fact-item">
+            <i class="fact-icon blue fas fa-gift"></i>
+            <div class="fact-number">1050+</div>
+            <div class="fact-text">Projects Completed</div>
+          </div>
+          <div class="fact-item">
+            <i class="fact-icon coral fas fa-heart"></i>
+            <div class="fact-number">217k</div>
+            <div class="fact-text">Happy Clients</div>
+          </div>
+          <div class="fact-item">
+            <i class="fact-icon green fas fa-medal"></i>
+            <div class="fact-number">1210</div>
+            <div class="fact-text">Design Awards</div>
+          </div>
+          <div class="fact-item">
+            <i class="fact-icon orange fas fa-shopping-basket"></i>
+            <div class="fact-number">217k</div>
+            <div class="fact-text">Happy Clients</div>
+          </div>
+          <div class="fact-item">
+            <i class="fact-icon yellow fas fa-bell"></i>
+            <div class="fact-number">2137</div>
+            <div class="fact-text">Line Of Codes</div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Meet Our Team -->
+    <section class="team-section" id="our-team">
+      <div class="section-header">
+        <h2>Meet Our Team</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-member">
+          <img
+            src="/images/team2.webp"
+            alt="Justin Bieber"
+            class="member-image"
+          />
+          <h3 class="member-name">Justin Bieber</h3>
+          <p class="member-position">Head of SEO</p>
+          <p class="member-bio">
+            Johnathan is our co-founder and has developed search strategies for
+            a variety of clients for over 5 years.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link twitter">
+              <i class="fa fa-twitter fa-solid"></i>
+            </a>
+            <a href="#" class="social-link instagram">
+              <i class="fa fa-facebook fa-solid"></i>
+            </a>
+            <a href="#" class="social-link podcast">
+              <i class="fa-solid fa-podcast"></i>
+            </a>
+            <a href="#" class="social-link email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img
+            src="/images/team1.png"
+            alt="The Kid Laori"
+            class="member-image"
+          />
+          <h3 class="member-name">The Kid Laori</h3>
+          <p class="member-position">Marketing Manager</p>
+          <p class="member-bio">
+            Andres fell in love with marketing at the school and looks forward
+            to being part of the industry for years.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link twitter">
+              <i class="fa fa-twitter fa-solid"></i>
+            </a>
+            <a href="#" class="social-link instagram">
+              <i class="fa fa-facebook fa-solid"></i>
+            </a>
+            <a href="#" class="social-link podcast">
+              <i class="fa-solid fa-podcast"></i>
+            </a>
+            <a href="#" class="social-link email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img
+            src="/images/team1.webp"
+            alt="Shawon Mendes"
+            class="member-image"
+          />
+          <h3 class="member-name">Shawon Mendes</h3>
+          <p class="member-position">SEO Specialist</p>
+          <p class="member-bio">
+            Graduating with a degree in Spanish, English and French, she has
+            always loved writing.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link twitter">
+              <i class="fa fa-twitter fa-solid"></i>
+            </a>
+            <a href="#" class="social-link instagram">
+              <i class="fa fa-facebook fa-solid"></i>
+            </a>
+            <a href="#" class="social-link podcast">
+              <i class="fa-solid fa-podcast"></i>
+            </a>
+            <a href="#" class="social-link email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Works Process -->
-    <section class="work-process-section">
+    <section class="work-process-section" id="how-it-works">
       <div class="process-container">
         <!-- Work Process Content -->
         <div class="process-content">
@@ -337,7 +487,7 @@
     </section>
 
     <!-- Pricing -->
-    <section class="pricing-section">
+    <section class="pricing-section" id="pricing">
       <div class="pricing-header">
         <h2>Pricing for every business, at any stage</h2>
       </div>
@@ -382,7 +532,7 @@
     </section>
 
     <!-- Features -->
-    <section class="features-section">
+    <section class="features-section" id="features">
       <div class="features-container">
         <div class="features-header">
           <h2>Amazing Features</h2>
@@ -468,7 +618,7 @@
     <section class="testimonial-section">
       <div class="testimonial-content">
         <blockquote class="quote">
-          You don't have put something on a front, You don't have to act a
+          You don't have to put something on a front, You don't have to act a
           certain way. Who you are is enough. Just Be Yourself.
         </blockquote>
         <div class="author">
@@ -482,7 +632,7 @@
     </section>
 
     <!-- Blog Section -->
-    <section class="blog-section">
+    <section class="blog-section" id="blog">
       <div class="blog-container">
         <div class="blog-header">
           <h2>Our Blog</h2>
@@ -553,6 +703,101 @@
         </div>
       </div>
     </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="contact-form">
+        <h2>Get in touch</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Full Name*"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email Adress*"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="tel"
+              class="form-control"
+              placeholder="Phone Number*"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              placeholder="Your Message.."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">SEND MESSAGE</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h2>How to find us</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.7686531319883!2d-0.1397017!3d51.5151167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2d4c38b48b%3A0x91f10fa364452046!2sOxford%20St%2C%20London!5e0!3m2!1sen!2suk!4v1645890163039!5m2!1sen!2suk"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+        <div class="office-info">
+          <h3>Head Office</h3>
+          <div class="contact-item">
+            <i>📍</i>
+            <span>Uttara, Dhaka</span>
+          </div>
+          <div class="contact-item">
+            <i>✉️</i>
+            <span>taninrahman21@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <i>📞</i>
+            <span>+880 1784933595</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="copyright">
+        Copyright © 2024 Tanin Rahman. Developed by
+        <a target="_blank" href="https://tanin-rahman-portfolio.netlify.app"
+          >Tanin</a
+        >
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="Skype">
+          <i class="fab fa-skype"></i>
+        </a>
+      </div>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>

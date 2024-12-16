@@ -175,6 +175,7 @@ html {
 .hero-section {
   background: #f5f7fc;
   width: 100%;
+  margin-top: 85px;
 }
 .hero-container {
   max-width: 1200px;

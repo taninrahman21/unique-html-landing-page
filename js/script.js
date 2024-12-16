@@ -3,7 +3,6 @@ const allAccordionBody = document.querySelectorAll('.accordion-item');
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const mobileMenuItems = document.querySelectorAll('.mobile-navLinks li a');
-console.log(mobileMenuItems);
 
 hamburger.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');
